@@ -1,0 +1,14 @@
+version: 1
+kind: notebook
+backend: lab
+build:
+  image: 'python:3'
+  build_steps:
+    - pip3 install jupyterlab==0.33.12
+    - python -m pip install -U pip
+    - python -m pip install -U matplotlib
+    - pip install numpy
+    - pip install scipy
+    - pip install pandas
+    - pip install -U scikit-learn
+    - pip install -U polyaxon-client
